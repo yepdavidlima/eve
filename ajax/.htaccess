@@ -1,0 +1,2 @@
+Rewrite Engine On
+RewriteRule ^(.*)\.php$ $1.json

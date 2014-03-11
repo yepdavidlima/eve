@@ -1,0 +1,16 @@
+<?php
+namespace Eve;
+trait Config{
+  public static $database = Array(
+    "type" => "MySQL",
+    "server" => "localhost",
+    "database" => "eve",
+    "user" => "root",
+    "password" => "yep313233"
+  );
+  
+  public static $environment = Array(
+    "administrator_accounts_table" => "administradores",
+    "password_hashing_cost" => 12
+  );
+}
