@@ -16,11 +16,11 @@ trait Config{
    * @static
    */
   public static $database = Array(
-    "type" => "MySQL",
-    "server" => "localhost",
-    "database" => "eve",
-    "user" => "root",
-    "password" => "yep313233"
+    "type" => "MySQL", # Inicialmente o sistema só suporta conexões MySQL
+    "server" => "",
+    "database" => "",
+    "user" => "",
+    "password" => ""
   );
   
   /**

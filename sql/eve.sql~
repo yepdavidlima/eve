@@ -1,6 +1,5 @@
 /*
 SQL da versão de desenvolvimento 0.1 do EveCMS
-Desenvolvido para MySQL - em breve será portado para PostgreSQL
 */
 
 DROP DATABASE IF EXISTS `eve`;
