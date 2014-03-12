@@ -1,5 +1,6 @@
 <?php
 namespace Eve;
+
 /**
  * Implementação MySQL da interface DB. Provê um meio de conexão para CRUD com um banco de dados MySQL
  * @author David Lima
@@ -59,7 +60,7 @@ class MySQL implements DB{
       return true;
     }
     $this->pdo->rollBack();
-    throw new EveException("Impossível executar MySQL Update");
+    throw new EveException("Impossível executar MySQL Update:".$this->pdo->errorInfo()[2]);
   }
   
   /**
@@ -90,7 +91,6 @@ class MySQL implements DB{
     if($query){
       return $query;
     }
-    print_r($this->pdo->errorInfo());
     throw new EveException("Impossível executar MySQL Select");
   }
 }

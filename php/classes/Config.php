@@ -2,13 +2,19 @@
 namespace Eve;
 
 /**
- * Carrega todas as configurações globais do sistema
+ * Contém todas as configurações globais do sistema
  * @author David Lima
  * @copyright 2014, David Lima
  * @version dev 1.0
  * @package System
  */
 trait Config{
+  
+  /**
+   * Guarda as configurações de conexão com o banco de dados principal
+   * @var array
+   * @static
+   */
   public static $database = Array(
     "type" => "MySQL",
     "server" => "localhost",
@@ -17,15 +23,30 @@ trait Config{
     "password" => "yep313233"
   );
   
+  /**
+   * Guarda as variáveis de ambiente
+   * @var array
+   * @static
+   */
   public static $environment = Array(
     "administrator_accounts_table" => "administradores",
     "password_hashing_cost" => 12
   );
   
   /**
-   * Define os diretórios padrões para upload de arquivos
+   * Guarda as informações do cliente (website)
+   * @var array
+   * @static
+   */
+  public static $client = Array(
+    "website" => "Nome do website",
+    "url" => "http://localhost"  
+  );
+  
+  /**
+   * Guarda os diretórios padrões para upload de arquivos
    * Suporte para diretórios personalizados de acordo com a extensão: basta usar a extensão desejada como chave para o valor ("extensao" => "diretorio")
-   * @var @uploads
+   * @var array
    * @static
    */
   public static $uploads = Array(

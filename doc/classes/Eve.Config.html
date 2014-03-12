@@ -114,12 +114,12 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">36</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">39</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../reports/markers.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">1</span>
                                 </a>
                             </li>
                         </ul>
@@ -139,19 +139,19 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-2018536590"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-877861089"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-2018536590" class="accordion-body collapse in">
+            <div id="namespace-877861089" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1735087774"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1305437755"></a>
                                 <a href="../namespaces/Eve.html" style="margin-left: 30px; padding-left: 0">Eve</a>
             </div>
-            <div id="namespace-1735087774" class="accordion-body collapse ">
+            <div id="namespace-1305437755" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -159,10 +159,12 @@
                                                     <li class="interface"><a href="../classes/Eve.DB.html">DB</a></li>
                                                                             <li class="trait"><a href="../classes/Eve.Config.html">Config</a></li>
                                                                             <li class="class"><a href="../classes/Eve.MySQL.html">MySQL</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Util.html">Util</a></li>
                                                     <li class="class"><a href="../classes/Eve.Lock.html">Lock</a></li>
-                                                    <li class="class"><a href="../classes/Eve.PgSQL.html">PgSQL</a></li>
-                                                    <li class="class"><a href="../classes/Eve.Admin.html">Admin</a></li>
                                                     <li class="class"><a href="../classes/Eve.EveException.html">EveException</a></li>
+                                                    <li class="class"><a href="../classes/Eve.PgSQL.html">PgSQL</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Blog.html">Blog</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Admin.html">Admin</a></li>
                                                     <li class="class"><a href="../classes/Eve.Connector.html">Connector</a></li>
                                             </ul>
                 </div>
@@ -190,7 +192,7 @@
                     <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
 
                     <h1><small>\Eve</small>Config</h1>
-                    <p><em></em></p>
+                    <p><em>Contém todas as configurações globais do sistema</em></p>
                     
 
                     <section id="summary">
@@ -213,6 +215,8 @@
                             <section class="span4">
                                                                     <a href="../classes/Eve.Config.html#property_database" class="">$database</a><br />
                                                                     <a href="../classes/Eve.Config.html#property_environment" class="">$environment</a><br />
+                                                                    <a href="../classes/Eve.Config.html#property_client" class="">$client</a><br />
+                                                                    <a href="../classes/Eve.Config.html#property_uploads" class="">$uploads</a><br />
                                                             </section>
                             <section class="span4">
                                                                     <em>No constants found</em>
@@ -249,7 +253,7 @@
                         <dt>File</dt>
                             <dd><a href="../files/classes.Config.php.html"><div class="path-wrapper">classes\Config.php</div></a></dd>
                                                 <dt>Package</dt>
-                            <dd><div class="namespace-wrapper">\Default</div></dd>
+                            <dd><div class="namespace-wrapper">\System</div></dd>
                                                 <dt>Class hierarchy</dt>
                             <dd class="hierarchy">
                                                                                                                                                                     <div class="namespace-wrapper">\Eve\Config</div>
@@ -262,6 +266,30 @@
                                                                         </dl>
                     <h2>Tags</h2>
                     <table class="table table-condensed">
+                                            <tr>
+                            <th>
+                                author
+                            </th>
+                            <td>
+                                                                    <p>David Lima</p>
+                                                            </td>
+                        </tr>
+                                            <tr>
+                            <th>
+                                copyright
+                            </th>
+                            <td>
+                                                                    <p>2014, David Lima</p>
+                                                            </td>
+                        </tr>
+                                            <tr>
+                            <th>
+                                version
+                            </th>
+                            <td>
+                                                                    <p>dev 1.0</p>
+                                                            </td>
+                        </tr>
                                             <tr>
                             <th>
                                 todo
@@ -287,11 +315,13 @@
             <a id="property_database" name="property_database" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$database</h3>
-                <pre class="signature">$database</pre>
-                <p><em></em></p>
+                <pre class="signature">$database : array</pre>
+                <p><em>Guarda as configurações de conexão com o banco de dados principal</em></p>
                 
 
-                            </article>
+                                <h4>Type</h4>
+                array
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -299,6 +329,14 @@
                                                             </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            static
+                        </th>
+                        <td>
+                                                            
+                                                    </td>
+                    </tr>
                                     <tr>
                         <th>
                             todo
@@ -315,11 +353,13 @@
             <a id="property_environment" name="property_environment" class="anchor"></a>
             <article class="property">
                 <h3 class="public ">$environment</h3>
-                <pre class="signature">$environment</pre>
-                <p><em></em></p>
+                <pre class="signature">$environment : array</pre>
+                <p><em>Guarda as variáveis de ambiente</em></p>
                 
 
-                            </article>
+                                <h4>Type</h4>
+                array
+                                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -327,6 +367,91 @@
                                                             </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            static
+                        </th>
+                        <td>
+                                                            
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_client" name="property_client" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$client</h3>
+                <pre class="signature">$client : array</pre>
+                <p><em>Guarda as informações do cliente (website)</em></p>
+                
+
+                                <h4>Type</h4>
+                array
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            static
+                        </th>
+                        <td>
+                                                            
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_uploads" name="property_uploads" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$uploads</h3>
+                <pre class="signature">$uploads : array</pre>
+                <p><em>Guarda os diretórios padrões para upload de arquivos
+Suporte para diretórios personalizados de acordo com a extensão: basta usar a extensão desejada como chave para o valor (&quot;extensao&quot; =&gt; &quot;diretorio&quot;)</em></p>
+                
+
+                                <h4>Type</h4>
+                array
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            static
+                        </th>
+                        <td>
+                                                            
+                                                    </td>
+                    </tr>
                                     <tr>
                         <th>
                             todo
@@ -389,7 +514,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on March 6th, 2014 at 15:16.
+                    on March 11th, 2014 at 18:25.
                 </section>
             </section>
         </section>

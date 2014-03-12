@@ -66,12 +66,12 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">36</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">39</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../reports/markers.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">1</span>
                                 </a>
                             </li>
                         </ul>
@@ -91,19 +91,19 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1410859043"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1270036571"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-1410859043" class="accordion-body collapse in">
+            <div id="namespace-1270036571" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1462787458"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-825849894"></a>
                                 <a href="../namespaces/Eve.html" style="margin-left: 30px; padding-left: 0">Eve</a>
             </div>
-            <div id="namespace-1462787458" class="accordion-body collapse ">
+            <div id="namespace-825849894" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -111,10 +111,12 @@
                                                     <li class="interface"><a href="../classes/Eve.DB.html">DB</a></li>
                                                                             <li class="trait"><a href="../classes/Eve.Config.html">Config</a></li>
                                                                             <li class="class"><a href="../classes/Eve.MySQL.html">MySQL</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Util.html">Util</a></li>
                                                     <li class="class"><a href="../classes/Eve.Lock.html">Lock</a></li>
-                                                    <li class="class"><a href="../classes/Eve.PgSQL.html">PgSQL</a></li>
-                                                    <li class="class"><a href="../classes/Eve.Admin.html">Admin</a></li>
                                                     <li class="class"><a href="../classes/Eve.EveException.html">EveException</a></li>
+                                                    <li class="class"><a href="../classes/Eve.PgSQL.html">PgSQL</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Blog.html">Blog</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Admin.html">Admin</a></li>
                                                     <li class="class"><a href="../classes/Eve.Connector.html">Connector</a></li>
                                             </ul>
                 </div>
@@ -146,7 +148,7 @@
                     <table class="table table-hover">
                                                     <tr>
                                 <td><a href="../classes/Eve.Config.html">Config</a></td>
-                                <td><em></em></td>
+                                <td><em>Contém todas as configurações globais do sistema</em></td>
                             </tr>
                                             </table>
                     
@@ -165,20 +167,28 @@
                             <td><em>Implementação MySQL da interface DB. Provê um meio de conexão para CRUD com um banco de dados MySQL</em></td>
                         </tr>
                                             <tr>
+                            <td><a href="../classes/Eve.Util.html">Util</a></td>
+                            <td><em>Contém uma série de métodos de tratamento de dados e utilidades</em></td>
+                        </tr>
+                                            <tr>
                             <td><a href="../classes/Eve.Lock.html">Lock</a></td>
                             <td><em>Módulo de segurança do sistema. Este módulo contém métodos estáticos para tratamento, conversão e filtragem de dados</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/Eve.EveException.html">EveException</a></td>
+                            <td><em>Extensão da classe \Exception</em></td>
                         </tr>
                                             <tr>
                             <td><a href="../classes/Eve.PgSQL.html">PgSQL</a></td>
                             <td><em></em></td>
                         </tr>
                                             <tr>
-                            <td><a href="../classes/Eve.Admin.html">Admin</a></td>
-                            <td><em>Classe responsável por gerenciar os administradores e permissões de acesso dentro do sistema</em></td>
+                            <td><a href="../classes/Eve.Blog.html">Blog</a></td>
+                            <td><em>Módulo de extensão que provê uma interface de blog completa para o Eve</em></td>
                         </tr>
                                             <tr>
-                            <td><a href="../classes/Eve.EveException.html">EveException</a></td>
-                            <td><em></em></td>
+                            <td><a href="../classes/Eve.Admin.html">Admin</a></td>
+                            <td><em>Classe responsável por gerenciar os administradores e permissões de acesso dentro do sistema</em></td>
                         </tr>
                                             <tr>
                             <td><a href="../classes/Eve.Connector.html">Connector</a></td>
@@ -241,7 +251,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on March 6th, 2014 at 15:16.
+                    on March 11th, 2014 at 18:25.
                 </section>
             </section>
         </section>

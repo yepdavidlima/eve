@@ -5,8 +5,8 @@ namespace Eve;
  * @author David Lima
  * @copyright 2014, David Lima
  * @version dev 1.0
- * @uses Connector
- * @see Config
+ * @uses Config
+ * @see Connector
  * @package System
  * @final
  */
@@ -17,6 +17,8 @@ final class Admin{
   public function __construct(){
     $this->db = Connector::get(); # $this->db se torna uma instância de banco de dados no mesmo momento da instanciação da classe base Admin
     $this->administrator_accounts_table = static::$environment['administrator_accounts_table'];
+    $this->LoadExtension("Lock");
+    $this->LoadExtension("Util");
   }
   
   /**
@@ -72,7 +74,13 @@ final class Admin{
     return true;
   }
   
-  final public function Login(Array $credenciais){
+  /**
+   * Valida $credenciais, verificando se existem dados correspondentes no banco de dados
+   * @param array $credenciais
+   * @throws EveException
+   * @return boolean
+   */
+  public function Login(Array $credenciais){
     // Verifica se $credenciais['login'] e $credenciais['senha'] não estão setados ou são nulos
     if(!$credenciais['login']||!$credenciais['senha']){
       throw new EveException("Preencha todos os campos!"); 
@@ -85,6 +93,40 @@ final class Admin{
       }
     }
     throw new EveException("Usuário ou senha inválidos");
+  }
+  
+  /**
+   * Carrega um módulo de extensão, retorna true no caso de sucesso, false caso contrário
+   * @param string $extension Nome da extensão a ser carregada
+   * @throws EveException
+   * @return boolean
+   * @example LoadExtension("Hello") will set $this->Hello = new Hello() if "php/extensions/$extension.php" exists
+   */
+  final public function LoadExtension($extension){
+    if(file_exists("php/extensions/$extension.php")){
+      require_once("php/extensions/$extension.php");
+      $ext = "Eve\\$extension";
+      $this->{$extension} = new $ext;
+      return true;
+    }
+    throw new EveException("Extensão inexistente: $extension");
+  }
+  
+  /**
+   * Carrega um módulo de aplicação, retorna true no caso de sucesso, false caso contrário
+   * @param string $extension Nome da extensão a ser carregada
+   * @throws EveException
+   * @return boolean
+   * @example LoadApplication("Hello") will set $this->Hello = new Hello() if "php/applications/$app.php" exists
+   */
+  final public function LoadApplication($app){
+    if(file_exists("php/applications/$app.php")){
+      require_once("php/applications/$app.php");
+      $mod = "Eve\\$app";
+      $this->{$app} = new $mod;
+      return true;
+    }
+    throw new EveException("Aplicação inexistente: $app");
   }
   
   /**

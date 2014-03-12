@@ -5,7 +5,7 @@ namespace Eve;
  * Módulo de segurança do sistema. Este módulo contém métodos estáticos para tratamento, conversão e filtragem de dados
  * @author David Lima
  * @copyright 2014, David Lima
- * @package System
+ * @package Extension
  * @see Config
  */
 class Lock{

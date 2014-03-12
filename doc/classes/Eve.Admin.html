@@ -114,12 +114,12 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">36</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">39</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../reports/markers.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">1</span>
                                 </a>
                             </li>
                         </ul>
@@ -139,19 +139,19 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1828703801"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-645490446"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-1828703801" class="accordion-body collapse in">
+            <div id="namespace-645490446" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-363005550"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1101999572"></a>
                                 <a href="../namespaces/Eve.html" style="margin-left: 30px; padding-left: 0">Eve</a>
             </div>
-            <div id="namespace-363005550" class="accordion-body collapse ">
+            <div id="namespace-1101999572" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -159,10 +159,12 @@
                                                     <li class="interface"><a href="../classes/Eve.DB.html">DB</a></li>
                                                                             <li class="trait"><a href="../classes/Eve.Config.html">Config</a></li>
                                                                             <li class="class"><a href="../classes/Eve.MySQL.html">MySQL</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Util.html">Util</a></li>
                                                     <li class="class"><a href="../classes/Eve.Lock.html">Lock</a></li>
-                                                    <li class="class"><a href="../classes/Eve.PgSQL.html">PgSQL</a></li>
-                                                    <li class="class"><a href="../classes/Eve.Admin.html">Admin</a></li>
                                                     <li class="class"><a href="../classes/Eve.EveException.html">EveException</a></li>
+                                                    <li class="class"><a href="../classes/Eve.PgSQL.html">PgSQL</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Blog.html">Blog</a></li>
+                                                    <li class="class"><a href="../classes/Eve.Admin.html">Admin</a></li>
                                                     <li class="class"><a href="../classes/Eve.Connector.html">Connector</a></li>
                                             </ul>
                 </div>
@@ -211,10 +213,14 @@
                                                                     <a href="../classes/Eve.Admin.html#method___construct" class="">__construct()</a><br />
                                                                     <a href="../classes/Eve.Admin.html#method_AddAdministrator" class="">AddAdministrator()</a><br />
                                                                     <a href="../classes/Eve.Admin.html#method_RemoveAdministrator" class="">RemoveAdministrator()</a><br />
+                                                                    <a href="../classes/Eve.Admin.html#method_UpdateAdministrator" class="">UpdateAdministrator()</a><br />
+                                                                    <a href="../classes/Eve.Admin.html#method_Login" class="">Login()</a><br />
+                                                                    <a href="../classes/Eve.Admin.html#method_LoadExtension" class="">LoadExtension()</a><br />
+                                                                    <a href="../classes/Eve.Admin.html#method_LoadApplication" class="">LoadApplication()</a><br />
                                                             </section>
                             <section class="span4">
                                                                     <a href="../classes/Eve.Admin.html#property_db" class="">$db</a><br />
-                                                                    <a href="../classes/Eve.Admin.html#property_administrador_accounts_table" class="">$administrador_accounts_table</a><br />
+                                                                    <a href="../classes/Eve.Admin.html#property_administrator_accounts_table" class="">$administrator_accounts_table</a><br />
                                                             </section>
                             <section class="span4">
                                                                     <em>No constants found</em>
@@ -362,10 +368,10 @@
 
                                     <div class="row-fluid">
         <div class="span8 content class">
-            <a id="property_administrador_accounts_table" name="property_administrador_accounts_table" class="anchor"></a>
+            <a id="property_administrator_accounts_table" name="property_administrator_accounts_table" class="anchor"></a>
             <article class="property">
-                <h3 class="public ">$administrador_accounts_table</h3>
-                <pre class="signature">$administrador_accounts_table</pre>
+                <h3 class="public ">$administrator_accounts_table</h3>
+                <pre class="signature">$administrator_accounts_table</pre>
                 <p><em></em></p>
                 
 
@@ -515,6 +521,217 @@
         </aside>
     </div>
 
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_UpdateAdministrator" name="method_UpdateAdministrator" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">UpdateAdministrator()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">UpdateAdministrator(array <span class="argument">$dados</span>) : boolean</pre>
+                <p><em>Atualiza os dados de um determinado administrador</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>array</td>
+                                <td>$dados</td>
+                                <td><p>Deve conter os dados a serem atualizados</p></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\Eve\EveException</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                    <span class="label label-info">final</span>
+                                    <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            example
+                        </th>
+                        <td>
+                                                                                            <p>=> "Jack", "id" => 55));</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_Login" name="method_Login" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">Login()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">Login(array <span class="argument">$credenciais</span>) : boolean</pre>
+                <p><em>Valida $credenciais, verificando se existem dados correspondentes no banco de dados</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>array</td>
+                                <td>$credenciais</td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\Eve\EveException</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_LoadExtension" name="method_LoadExtension" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">LoadExtension()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">LoadExtension(string <span class="argument">$extension</span>) : boolean</pre>
+                <p><em>Carrega um módulo de extensão, retorna true no caso de sucesso, false caso contrário</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$extension</td>
+                                <td><p>Nome da extensão a ser carregada</p></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\Eve\EveException</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                    <span class="label label-info">final</span>
+                                    <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            example
+                        </th>
+                        <td>
+                                                                                            <p>will set $this->Hello = new Hello() if "php/extensions/$extension.php" exists</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_LoadApplication" name="method_LoadApplication" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">LoadApplication()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">LoadApplication( <span class="argument">$app</span>) : boolean</pre>
+                <p><em>Carrega um módulo de aplicação, retorna true no caso de sucesso, false caso contrário</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$app</td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\Eve\EveException</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                    <span class="label label-info">final</span>
+                                    <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            example
+                        </th>
+                        <td>
+                                                                                            <p>will set $this->Hello = new Hello() if "php/applications/$app.php" exists</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
                                                                     <div class="row-fluid">
         <div class="span8 content class">
             <a id="method_IdRegistered" name="method_IdRegistered" class="anchor"></a>
@@ -649,7 +866,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on March 6th, 2014 at 15:16.
+                    on March 11th, 2014 at 18:25.
                 </section>
             </section>
         </section>
