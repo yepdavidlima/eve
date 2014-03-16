@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 eve
 ===
 Esta é a versão inicial de desenvolvimento do Eve CMS.
