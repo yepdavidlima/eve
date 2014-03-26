@@ -19,6 +19,7 @@ final class Admin{
     $this->administrator_accounts_table = static::$environment['administrator_accounts_table'];
     $this->LoadExtension("Lock");
     $this->LoadExtension("Util");
+    $this->LoadExtension("PagSeguro");
   }
   
   /**
@@ -98,31 +99,33 @@ final class Admin{
   /**
    * Carrega um módulo de extensão, retorna true no caso de sucesso, false caso contrário
    * @param string $extension Nome da extensão a ser carregada
+   * @param string $namespace Namespace da extensão a ser carregada
    * @throws EveException
    * @return boolean
    * @example LoadExtension("Hello") will set $this->Hello = new Hello() if "php/extensions/$extension.php" exists
    */
-  final public function LoadExtension($extension){
-    if(file_exists("php/extensions/$extension.php")){
+  final public function LoadExtension($extension, $namespace = "Eve"){
+    if(file_exists(Config::$include_path."php/extensions/$extension.php")){
       require_once("php/extensions/$extension.php");
-      $ext = "Eve\\$extension";
+      $ext = "$namespace\\$extension";
       $this->{$extension} = new $ext;
       return true;
     }
-    throw new EveException("Extensão inexistente: $extension");
+    throw new EveException("Extensão inexistente: $namespace\\$extension");
   }
   
   /**
    * Carrega um módulo de aplicação, retorna true no caso de sucesso, false caso contrário
-   * @param string $extension Nome da extensão a ser carregada
+   * @param string $extension Nome da aplicação a ser carregada
+   * @param string $namespace Namespace da aplicação a ser carregada
    * @throws EveException
    * @return boolean
    * @example LoadApplication("Hello") will set $this->Hello = new Hello() if "php/applications/$app.php" exists
    */
-  final public function LoadApplication($app){
-    if(file_exists("php/applications/$app.php")){
+  final public function LoadApplication($app, $namespace = "Eve"){
+    if(file_exists(Config::$include_path."php/applications/$app.php")){
       require_once("php/applications/$app.php");
-      $mod = "Eve\\$app";
+      $mod = "$namespace\\$app";
       $this->{$app} = new $mod;
       return true;
     }
