@@ -6,7 +6,7 @@
 <title>Admin</title>
 <link href="css/eve.css" type="text/css" rel="stylesheet">
 <script src="js/lib/jquery-1.11.0.min.js"></script>
-<link href="ui/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="ui/bootstrap/css/united.bootstrap.min.css" type="text/css" rel="stylesheet">
 <link href="ui/purecss/grids-min.css" type="text/css" rel="stylesheet">
 <script src="ui/bootstrap/js/bootstrap.min.js"></script>
 <script src="ui/bootstrap/js/bootswatch.js"></script>
@@ -41,6 +41,16 @@
             <li><a href="#">Relatórios</a></li>
             <li class="divider"></li>
             <li><a href="#">Painel</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Financeiro <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">A receber</a></li>
+            <li><a href="#">A pagar</a></li>
+            <li><a href="#">Relatório</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Gerar link de pagamento</a></li>
           </ul>
         </li>
       </ul>

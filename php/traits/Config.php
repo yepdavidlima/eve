@@ -61,8 +61,8 @@ trait Config{
    */
   public static $pagseguro = Array(
     "api" => "php/externals/PagSeguroLibrary/PagSeguroLibrary.php",
-    "email" => "david.lima@agenciayep.com",
-    "token" => "372DA7C604A64843A30D6E0072CEF734"
+    "email" => "",
+    "token" => ""
   );
   
   public static $include_path = "";
